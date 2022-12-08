@@ -1,0 +1,668 @@
+/*dashboard */
+.dashboard h1{
+  color:#0A6CC2 ;
+  font-family: Georgia;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  margin: 30px;
+  width: 400px;
+  min-height: 70px;
+  display: grid;
+  grid-template-rows: 20px 50px 1fr 50px;
+  border-radius: 5px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+}
+
+.card img{
+ float: left;
+ margin-top: 10%;
+}
+
+.card h1{
+  margin-left: 59%;
+  color:#0357A1 ;
+  font-size: xxx-large;
+  font-family: Georgia;
+}
+.card h3{
+  margin-top: 4%;
+  margin-left: 45%;
+  color:#0A6CC2 ;
+  font-size: x-large;
+  font-family: Georgia;
+}
+.card__title {
+  grid-row: 2/4;
+  font-weight: 400;
+  color: #ffffff;
+}
+/* RESPONSIVE */
+
+@media (max-width: 1600px) {
+  .cards {
+    justify-content: center;
+  }
+}
+
+.bar1{
+  float: left;
+}
+
+.line1{
+  float: right;
+}
+/*dashboard*/
+
+/* Department */
+.adddepart h1{
+    color:#0A6CC2 ;
+    font-family: Georgia;
+}
+.departcontainer  {
+    position: absolute;
+    left: 55%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 380px;
+    width: 600px;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 20px 8px #d0d0d0;
+  }
+  
+  .departcontent {
+    position: absolute;
+    text-align: justify;
+    color: black;
+    padding: 40px;
+    font-family: Georgia;
+    font-size: 16px;
+  }
+  
+  .departcontent input[type=text],textarea{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #0A6CC2 ;
+    margin-left: 6%;
+  }
+  .departcontent input[type=submit] {
+    width: 50%;
+    margin-top: 10%;
+    margin-left: 25%;
+    font-size: 16px;
+    background-color: #0A6CC2;
+    color: white;
+    padding: 10px 12px;
+    border: none;
+    cursor: pointer;
+  }
+  .departcontent input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  /*...Department... */
+ 
+  /* Patient */
+
+  .addpatient h1{
+    color:#0A6CC2 ;
+    font-family: Georgia;
+}
+
+.addpatient .container{
+    max-width: 800px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    margin-left: 20%;
+    margin-top: 2%;
+  }
+.addpatient .content form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+  }
+.addpatient form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+  }
+.addpatient form .input-box span.details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+.addpatient .user-details .input-box input,select{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+  }
+.addpatient .user-details .input-box select{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+  }
+  .user-details .input-box input:focus,
+  .user-details .input-box input:valid{
+    border-color: #0A6CC2;
+  }
+.addpatient form .gender-details .gender-title{
+    font-size: 20px;
+    font-weight: 500;
+   }
+.addpatient form .category{
+     display: flex;
+     width: 80%;
+     margin: 14px 0 ;
+     justify-content: space-between;
+   }
+.addpatient form .category label{
+     display: flex;
+     align-items: center;
+     cursor: pointer;
+   }
+.addpatient form .category label .dot{
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background: #d9d9d9;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+  }
+   #dot-1:checked ~ .category label .one,
+   #dot-2:checked ~ .category label .two{
+     background: #0A6CC2;
+     border-color: #d9d9d9;
+   }
+  .addpatient form input[type="radio"]{
+     display: none;
+   }
+  .addpatient form .button{
+     height: 45px;
+     margin: 35px 0
+   }
+  .addpatient form .button input{
+     height: 100%;
+     width: 100%;
+     border-radius: 3px;
+     border: none;
+     color: #fff;
+     font-size: 18px;
+     font-weight: 500;
+     letter-spacing: 1px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     background:#71b7e6;
+   }
+  .addpatient form .button input:hover{
+    /* transform: scale(0.99); */
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+    }
+  
+   @media(max-width: 584px){
+   .container{
+    max-width: 100%;
+  }
+  .addpatient form .user-details .input-box{
+      margin-bottom: 15px;
+      width: 100%;
+    }
+  .addpatient form .category{
+      width: 100%;
+    }
+  .addpatient .content form .user-details{
+      max-height: 300px;
+      overflow-y: scroll;
+    }
+  .addpatient .user-details::-webkit-scrollbar{
+      width: 5px;
+    }
+    }
+    @media(max-width: 459px){
+  .addpatient .container .content .category{
+      flex-direction: column;
+    }
+  }
+
+  /*..patient..*/
+
+   /*..inpatient..*/
+
+  .incontainer  {
+    position: absolute;
+    left: 80%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 470px;
+    width: 580px;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 20px 8px #d0d0d0;
+  }
+  
+ /*..inpatient..*/
+  /*..Outpatient..*/
+
+  .opregister h1{
+    color:#0A6CC2 ;
+    font-family: Georgia;
+}
+
+.opcontainer  {
+  position: absolute;
+  left: 55%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 430px;
+  width: 600px;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 20px 8px #d0d0d0;
+}
+
+.opcontent {
+  color: black;
+  padding: 30px;
+  font-family: Georgia;
+  font-size: 16px;
+  margin-left: 12%;
+}
+.opcontent input[type=number],input[type=date],input[type=text],input[type=email],textarea,select,input[type=radio],input[type=file],input[type=password] {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #0A6CC2 ;
+  box-sizing: border-box;
+  margin-left: 5%;
+}
+
+.opcontent input[type=submit] {
+  width: 100%;
+  margin-top: 10%;
+  margin-left: 40%;
+  font-size: 16px;
+  background-color: #0A6CC2;
+  color: white;
+  padding: 10px 12px;
+  border: none;
+  cursor: pointer;
+}
+
+/*..Add Doctor..*/
+
+.doccontainer  {
+  position: absolute;
+  left: 55%;
+  top: 57%;
+  transform: translate(-50%, -50%);
+  height: 560px;
+  width: 600px;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 20px 8px #d0d0d0;
+}
+
+/*..Add Doctor..*/
+
+/*..Add Staff..*/
+
+.staffcontainer  {
+  position: absolute;
+  left: 55%;
+  top: 57%;
+  transform: translate(-50%, -50%);
+  height: 510px;
+  width: 600px;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 20px 8px #d0d0d0;
+}
+
+/*..Add Staff..*/
+
+/*..Add Consult..*/
+
+.consultcontainer  {
+  position: absolute;
+  left: 55%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  height: 470px;
+  width: 600px;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 20px 8px #d0d0d0;
+}
+
+/*..Add Consult..*/
+
+/*..Add Medicines..*/
+
+.medcontainer  {
+  position: absolute;
+  left: 80%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 400px;
+  width: 500px;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 20px 8px #d0d0d0;
+}
+
+.medouterbox {
+  width: 800px;
+  border: 1px solid #0357A1;
+  padding: 50px;
+  margin: 20px;
+  box-shadow: 0 0 20px 8px #d0d0d0;
+  margin-left: 27%;
+  float:right;
+}
+/*..Add Medicines..*/
+
+/*..Add Sales..*/
+
+.salescontainer  {
+  position: absolute;
+  left: 55%;
+  top: 57%;
+  transform: translate(-50%, -50%);
+  height: 325px;
+  width: 600px;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 20px 8px #d0d0d0;
+}
+
+/*..Add Sales..*/
+
+/*..Lab details..*/
+
+.labcontainer  {
+  position: absolute;
+  left: 55%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  height: 520px;
+  width: 600px;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 20px 8px #d0d0d0;
+}
+
+/*..Lab details..*/
+
+/* view data */
+
+.heading{
+    color:#0A6CC2 ;
+    font-family: Georgia;
+}
+.outerbox {
+  width: 1000px;
+  border: 1px solid #0357A1;
+  padding: 50px;
+  margin: 20px;
+  box-shadow: 0 0 20px 8px #d0d0d0;
+  margin-left: 27%;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  margin: auto;
+  font-size: 0.9em;
+  font-family: 'Courier New', Courier, monospace;
+  max-width: 800px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+.styled-table thead tr{
+  background-color: #0357A1;
+  color: aliceblue;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+}
+
+.styled-table tbody tr{
+  border-bottom: 1px solid white;
+}
+
+.styled-table tbody tr:nth-of-type(even){
+  background-color: aliceblue;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #0357A1;
+}
+
+.btn {
+  border:none;
+  color: aliceblue;
+  padding: 5px 8px;
+  text-align: center;
+  text-decoration: none;
+  display:inline-block;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.btn-edit {
+  background-color: blue;
+}
+
+.btn-delete {
+  background-color: brown;
+}
+
+.btn-view{
+  background-color: aliceblue;
+  color: black;
+}
+
+.btn-contact {
+  background-color: #0357A1;
+  margin-bottom: 4%;
+  margin-left: 6%;
+}
+
+/* Room */
+
+.roomcontainer  {
+  position: absolute;
+  left: 80%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 430px;
+  width: 610px;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 20px 8px #d0d0d0;
+}
+
+.roomouterbox {
+  width: 750px;
+  border: 1px solid #0357A1;
+  padding: 50px;
+  margin: 20px;
+  box-shadow: 0 0 20px 8px #d0d0d0;
+  margin-left: 27%;
+  float:right;
+}
+
+/*... Room...*/
+
+/*bed*/
+
+.bedcontainer  {
+  position: absolute;
+  left: 80%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 350px;
+  width: 500px;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 20px 8px #d0d0d0;
+}
+
+/*...bed...*/
+
+/* DataTable */
+.dataTable{
+  height: 600px;
+  width: 300%;
+  margin-left:30px;
+}
+
+.dataTable h1{
+  color:#0A6CC2 ;
+  font-family: Georgia;
+}
+
+.btn2 {
+  border:none;
+  color: aliceblue;
+  background-color: #0357A1;
+  padding: 5px 8px;
+  text-align: center;
+  text-decoration: none;
+  display:inline-block;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+/* DataTable */
+
+/* Login */
+
+.logincontainer {
+  display: flex;
+  width: 1100px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-left: 17%;
+  margin-top: 8%;
+}
+.logincard {
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 300px;
+}
+.logincard-header{
+  background-color: #008CBA; 
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+.logincard-header h3{
+ color: white;
+ text-align: center;
+}
+.logincard-header h3{
+  color: white;
+  text-align: center;
+ }
+.logincard-body {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  min-height: 300px;
+}
+.logincard-body input[type=email],input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #0A6CC2 ;
+  box-sizing: border-box;
+
+}
+
+.fp{
+  text-align: right;
+  color : #2196EA ;
+}
+.lform-btn{
+  background-color: #008CBA; 
+  border: none;
+  color: white;
+  padding: 10px;
+  width:50%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-left: 20%;
+}
+
+/*...Login...*/
+
+/*admin profile*/
+
+.adminbox {
+  width: 800px;
+  height: 500px;
+  border: 1px solid #0357A1;
+  padding: 50px;
+  margin: 20px;
+  box-shadow: 0 0 20px 8px #d0d0d0;
+  margin-left: 45%;
+}
+.adminprofile{
+  float: left;
+}
+
+.adminpic{
+  float: right;
+}
+
+/*admin profile*/

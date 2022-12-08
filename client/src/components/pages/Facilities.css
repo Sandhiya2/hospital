@@ -1,0 +1,379 @@
+#pharmacy h1{
+    color:#107AD6;
+    text-align: center;
+}
+#pharmacy img{   
+    height: auto;
+    width:80%;
+    margin-left: 20%;
+}
+.page {
+    display: flex;
+  }
+  
+  .page > * {
+    padding: 1rem;
+  }
+  
+  .sidebar1 {
+    background: var(--color-primary-x-light);
+    outline: 1px solid var(--color-primary);
+    width: 50rem;
+  }
+  .sidebar1 p{
+    margin-top: 20%;
+    color:black;
+    font-size: large;
+  }
+  
+  .page {
+    background: white;
+    border: 1px solid var(--color-stroke);
+  }
+
+  :root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --varyDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+    --weight1: 200;
+    --weight2: 400;
+    --weight3: 600;
+}
+
+#lab h1{
+    color:#107AD6;
+    text-align: center;
+}
+
+.box1 p {
+  color: black;
+}
+
+.box1 {
+  border-radius: 5px;
+  box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+  padding: 30px;
+  margin: 20px;  
+}
+
+.box1 img {
+  float: right;
+}
+
+@media (max-width: 450px) {
+  .box1 {
+      height: 200px;
+  }
+}
+
+@media (max-width: 950px) and (min-width: 450px) {
+  .box1 {
+      text-align: center;
+      height: 180px;
+  }
+}
+
+.cyan {
+  border-top: 3px solid var(--cyan);
+}
+.red {
+  border-top: 3px solid var(--red);
+}
+.blue {
+  border-top: 3px solid var(--blue);
+}
+.orange {
+  border-top: 3px solid var(--orange);
+}
+
+.box1 h2 {
+  color: var(--varyDarkBlue);
+  font-weight: var(--weight3);
+}
+
+
+@media (min-width: 950px) {
+  .row1-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .row2-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .box-down {
+      position: relative;
+      top: 150px;
+  }
+  .box1 {
+      width: 20%;
+   
+  }
+}
+
+#icu h1{
+  color:#107AD6;
+  text-align: center;
+  margin-top: 4%;
+}
+.container1{
+  padding: 1em 0;
+  width: 100%;
+}
+@media screen and (max-width: 640px){
+  .container1{
+    display: block;
+    width: 100%;
+  }
+}
+
+.content1 {
+  position: relative;
+  width: 100%;
+  max-width: 850px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content1 .content-overlay1 {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content1:hover .content-overlay1{
+  opacity: 1;
+}
+
+.content-image{
+  width: 100%;
+}
+
+.content-details1 {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content1:hover .content-details1{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details1 h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+}
+
+.content-details1 p{
+  color: #fff;
+  font-size: 1em;
+}
+
+.fadeIn-top{
+  top: 20%;
+}
+#checkup h1{
+  color:#107AD6;
+  text-align: center;
+  margin-top: 4%;
+}
+.contain2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 40px 0;
+  margin-left: 9%;
+}
+
+.contain2 .checkup_card {
+  position: relative;
+  min-width: 320px;
+  height: 280px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 30px;
+  transition: 0.5s;
+}
+.contain2 .checkup_card:nth-child(1) .checkbox .checkcontent .popbutton {
+  background: #2196f3;
+}
+
+.contain2 .checkup_card:nth-child(2) .checkbox .checkcontent .popbutton {
+  background: #e91e63;
+}
+
+.contain2 .checkup_card:nth-child(3) .checkbox .checkcontent .popbutton {
+  background: #23c186;
+}
+
+.contain2 .checkup_card .checkbox {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #2a2b2f;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.contain2 .checkup_card .checkbox:hover {
+  transform: translateY(-50px);
+}
+
+.contain2 .checkup_card .checkbox:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 60%;
+}
+.contain2 .checkup_card .checkbox .checkcontent {
+  padding: 20px;
+  text-align: center;
+}
+
+.contain2 .card_checkup .checkbox .checkcontent h2 {
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  font-size: 8rem;
+}
+
+
+.contain2 .checkup_card .checkbox .checkcontent .popbutton {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: black;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+.contain2 .checkup_card .checkbox .checkcontent .popbutton:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  background: #fff;
+  color: #000;
+}
+.checkupcard__list{
+  color: #000;
+  list-style: none;
+}
+#physiotherapy{
+    color:#107AD6;
+    text-align: center;
+    margin-top: 4%;
+}
+#contain{
+	background: rgba(255, 255, 255, 0.90);
+	text-align: center;
+	border-radius: 5px;
+	overflow: hidden;
+	margin: 5em auto;
+	height: 380px;
+	width: 750px;
+  
+	
+}
+
+.product-details {
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+	padding: 30px;
+	height: 100%;
+	float: left;
+	width: 40%;
+
+}
+#contain .product-details > p {
+font-family: 'EB Garamond', serif;
+	text-align: center;
+	font-size: 20px;
+	color: black;
+	
+}
+.product-image{
+	transition: all 0.3s ease-out;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	width: 45%;
+	display: inline-block;
+  float: right;
+}
+
+#contain img {width: 100%;height: 100%;}
+
+.info2 {
+    background: rgba(27, 26, 26, 0.9);
+    font-family: 'Bree Serif', serif;
+    transition: all 0.3s ease-out;
+    transform: translateX(-100%);
+    position: absolute;
+    line-height: 1.8;
+    text-align: left;
+    font-size: 105%;
+    color: #FFF;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.info2 h2 {text-align: center}
+.product-image:hover .info2{transform: translateX(0);}
+
+.info2 ul li{transition: 0.3s ease;}
+.info2 ul li:hover{transform: translateX(50px) scale(1.3);}
+
+.product-image:hover img {transition: all 0.3s ease-out;}
+.product-image:hover img {transform: scale(1.2, 1.2);}
+
+.MuiFormHelperText-root{
+  color:red !important;
+}

@@ -1,0 +1,39 @@
+import "./App.css"
+import { useEffect } from "react"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import Home from "./components/pages/Home"
+import About from "./components/pages/About"
+import Departments from "./components/pages/Departments"
+import Facilities from "./components/pages/Facilities"
+import Consultants from "./components/pages/Consultants"
+import Contact from "./components/pages/Contact"
+import Signup from "./components/pages/Signup"
+//npm install --save aos@next
+//aos
+import AOS from "aos"
+import "aos/dist/aos.css"
+
+function App() {
+  //aos
+  useEffect(() => {
+    AOS.init()
+    AOS.refresh()
+  }, [])
+  return (
+    <>
+       <Router>
+        <Routes>
+          <Route exact path='/' component={Home} />
+          <Route exact path='/about' component={About} />
+          <Route exact path='/departments' component={Departments} />
+          <Route exact path='/facilities' component={Facilities} />
+          <Route exact path='/consultants' component={Consultants} />
+          <Route exact path='/contact' component={Contact} />
+          <Route exact path='/signup' component={Signup} />
+        </Routes>
+      </Router>
+    </>
+  )
+}
+
+export default App
